@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.7.4'
+	id 'fabric-loom' version '1.8.9'
 	id 'maven-publish'
 }
 
@@ -11,6 +11,7 @@ base {
 }
 
 repositories {
+	maven { url 'https://maven.fabricmc.net/' }
 }
 
 dependencies {
@@ -38,7 +39,4 @@ java {
 }
 
 jar {
-	from('LICENSE') {
-		rename { "${it}_${project.base.archivesName.get()}" }
-	}
-}
+	from('
