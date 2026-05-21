@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "afk-farmer",
+  "version": "${version}",
+  "name": "AFK Farmer",
+  "description": "AFK farming macro: Right Alt to start, Left Alt to stop.",
+  "authors": ["You"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.afkmod.AfkFarmerMod"
+    ]
+  },
+  "mixins": [
+    "afk-farmer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11"
+  }
+}
